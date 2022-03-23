@@ -2,6 +2,10 @@
 # plotando um histograma com o valor em cima certinho
 
 def histograma():
+
+	'''
+	Retorna um histograma com o valor da moda
+	'''
 	import matplotlib.pyplot as plt
 	import seaborn as sns
 	import numpy as np
@@ -32,3 +36,5 @@ def histograma():
 
 	plt.grid()
 	plt.show()
+
+	# o scrpit ainda precisa de uns ajustes pra sair melhor o histograma, mas a ideia é essa
