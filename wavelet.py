@@ -1,4 +1,4 @@
-# atuliazação do codigo
+
 
 def wavelet_analysis(dataset, significancia, j, d):
   '''
@@ -145,3 +145,5 @@ def wavelet_analysis(dataset, significancia, j, d):
   ax.set_xlim([t.min(), t.max()])
 
   pyplot.show()
+
+  # esse código sai as imagens perfeitas, se necessitar de algum ajuste, tem que ser feito antes aqui.
