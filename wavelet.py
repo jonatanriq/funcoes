@@ -1,5 +1,3 @@
-wavelet.py
-
 # atuliazação do codigo
 
 def wavelet_analysis(dataset, significancia, j, d):
