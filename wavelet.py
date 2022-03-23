@@ -147,3 +147,5 @@ def wavelet_analysis(dataset, significancia, j, d):
   ax.set_xlim([t.min(), t.max()])
 
   pyplot.show()
+
+  # testando um commit
