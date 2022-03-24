@@ -1,7 +1,7 @@
 
 # plotando um histograma com o valor em cima certinho
 
-def histograma(dado):
+def histograma(dado, variavel):
 
 	'''
 	Retorna um histograma com o valor da moda
@@ -20,8 +20,8 @@ def histograma(dado):
 
 	histograma = sns.distplot(dado,norm_hist=True)
 	ax.set_ylabel('Densidade', fontsize=12)
-	ax.set_xlabel('Altura Significativa de Onda', fontsize=12)
-	ax.set_title('Histograma de Densidade dos valores de altura significativa de onda - Boia RJ4 (SiMCosta) ', fontsize=12)
+	ax.set_xlabel(f'{variavel}', fontsize=12)
+	ax.set_title(f'Histograma de Densidade dos valores de {variavel}', fontsize=12)
 
 	x,y = histograma.get_lines()[0].get_data()
 	plt.axvline(x=x[np.argmax(y)],color='k',linestyle='--',linewidth=1)
