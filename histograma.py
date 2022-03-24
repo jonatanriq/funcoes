@@ -1,7 +1,7 @@
 
 # plotando um histograma com o valor em cima certinho
 
-def histograma(dado, variavel):
+def histograma(dado, variavel, bins):
 
 	'''
 	Retorna um histograma com o valor da moda
@@ -11,11 +11,11 @@ def histograma(dado, variavel):
 	import numpy as np
 	from matplotlib.patches import Rectangle
 
-	fig, ax = plt.subplots(figsize=(10,10))
+	fig, ax = plt.subplots(figsize=(12,10))
 	plt.style.use('classic')
 	fig.patch.set_color('white')
 
-	histograma = sns.distplot(dado,norm_hist=True)
+	histograma = sns.distplot(dado,norm_hist=True, bins=bins)
 	ax.set_ylabel('Densidade', fontsize=12)
 	ax.set_xlabel(f'{variavel}', fontsize=12)
 	ax.set_title(f'Histograma de Densidade dos valores de {variavel}', fontsize=12)
@@ -28,7 +28,7 @@ def histograma(dado, variavel):
 	textstr = (f'Máx = {dado.max():.2f}m\nMin = {dado.min():.2f}m\nMédia = {dado.mean():.2f}m\nMediana = {dado.median():.2f}m')
 	props = dict(boxstyle='square', alpha=0.5, facecolor='none')
 
-	ax.text(0.66, 0.985, textstr, transform=ax.transAxes, fontsize=20,
+	ax.text(0.75, 0.985, textstr, transform=ax.transAxes, fontsize=20,
 	        verticalalignment='top', bbox=props)
 
 	plt.grid()
