@@ -11,9 +11,6 @@ def histograma(dado, variavel):
 	import numpy as np
 	from matplotlib.patches import Rectangle
 
-
-	boia = dados 
-
 	fig, ax = plt.subplots(figsize=(10,10))
 	plt.style.use('classic')
 	fig.patch.set_color('white')
