@@ -1,4 +1,3 @@
-
 # plotando um histograma com o valor em cima certinho
 
 def histograma(dado, variavel, bins, pos_x, pos_y):
