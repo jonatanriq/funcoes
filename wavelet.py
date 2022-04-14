@@ -1,5 +1,3 @@
-
-
 def wavelet_analysis(dataset, significancia, j, d):
   '''
   Retorna as imagens do plot de wavelet. Utiliza o pacote pwcwt e a metodologia de plot foi extraída da metodologia do Prof. André Belem 
