@@ -1,4 +1,3 @@
-
 def teste_normalidade():
 	from scipy.stats import normaltest
 	alpha = 0.05
